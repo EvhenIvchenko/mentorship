@@ -1,0 +1,126 @@
+
+/*  BODY */
+body {
+  background: rgb(23,23,23);
+  background: linear-gradient(93deg, rgba(23,23,23,1) 6%, rgb(194, 190, 190) 100%);
+  font-family:Helvetica;
+  color: rgb(214, 214, 214);
+  text-shadow: 1px 1px 1px rgb(67, 28, 158);
+
+}
+    /* HEADER */
+    header {
+      text-align: center;
+      text-shadow: 2px 2px rgb(14, 13, 13);
+      color: blue;
+    
+    }
+        /* CONTACTS */
+        .contacts {
+          display: flex;
+          justify-content: space-around;
+          padding:20px;
+          background-color: #8d8280;
+          margin: 0 100px;
+          border-radius: 40px;
+          box-shadow: 10px -5px 4px rgb(243, 175, 16);
+          }
+
+    /* MAIN */
+    main {
+      display:flex;
+      padding: 0px 100px;  
+      
+    }
+        /* ABOUT */
+        .about {
+        margin: 0 30px;
+        width: 50%;
+        }
+        /* INFORMATION */
+        .information {
+          margin:  0 30px;
+        }
+              /* ABBR */
+              .information abbr{
+                text-decoration: none;
+                font-weight: bold;
+              }
+              /* UL */
+              ul {
+                list-style-type: square ;
+                
+              }
+              /* ЦЕ ПРОСТО ДЛЯ ВІДОБРАЖЕННЯ  ІКОНКИ СПИСКУ*/
+              ul li {
+                display: block;
+                position: relative;
+                
+              }
+              ul li:before {
+                content: "";
+                position: absolute;
+                top: 1.2em;
+                left: -30px;
+                margin-top: -.9em;
+                background: #25231e;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+              }
+              /* h3 */
+              h2, h3 {
+                color:rgb(216, 143, 8);
+                }
+
+/* Portrait tablets and medium desktops */
+@media (max-width:992px) {
+  main {
+    display: block;
+    
+  }
+  .about , .information{
+    padding : 0 30px;
+    width: 90%;
+  }
+  
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .contacts {
+    margin:10px 20px;
+  }
+  main {
+    display: block;
+    padding: 10px 10px;
+  }
+  .about , .information{
+    padding : 0 30px;
+    width: 80%;
+  } 
+}
+ 
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.contacts {
+  margin: 10px 20px;
+}
+  main {
+  display: block;
+}
+main {
+  padding: 20px 20px;
+}
+.about, .information{
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+.links  img {
+  width: 30px;
+  height: 30px;
+}
+
+}
